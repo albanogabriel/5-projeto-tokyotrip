@@ -1,0 +1,268 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'MontserratAlternates';
+    list-style: none;
+    text-decoration: none;
+}
+
+:root{
+    --tokyored: #990e0e;
+    --brilliantred: rgb(246, 96, 96);
+    --blue: #10a5c0;
+    --bg: #ffffff;
+    --dark: rgb(52, 52, 52);
+    --grey: rgb(126, 125, 125);
+    --whitegrey: rgb(245, 245, 245);
+}
+
+/* Serve para criar corees raízes ex: ( color: var(--dark) */
+
+body{
+    color: var(--dark);
+    background-color: var(--bg);
+    max-width: 1280;
+    width: 100%;
+
+}
+
+/* Header */
+header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 40px;
+    width: 100%;
+    background-color: var(--bg);
+    box-shadow: 0 0.045rem 0.01rem #ccc;
+}
+
+header #tokyologo {
+    width: 130px;
+    height: auto;
+}
+
+header .nav-menu ul{
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+header .nav-menu a{
+    font-size: 14px;
+    color: var(--dark);
+    font-weight: 400;
+}
+
+header .nav-menu a:hover{
+    color: var(--tokyored);
+    font-weight: 400;
+}
+
+#faça-login{
+    font-size: 12px;
+    font-weight: 500;
+    color: var(--brilliantred);
+    border: 1.2px solid var(--brilliantred);
+    padding: 4px 28px;
+    border-radius: 6px;
+}
+
+#faça-login:hover{
+    color: var(--bg);
+    background-color:var(--brilliantred);
+}
+
+main{
+    width: 100%;
+    height: 65vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px 5%;
+}
+/* viewport height), que corresponde a 100% da altura da janela do navegador. Com isso, a tag <main> ocupará todo o espaço disponível verticalmente na janela do navegador. */
+
+.sobre{
+    max-width: 37rem;
+}
+
+.sobre-h1{
+    font-size: 1.2rem;
+    font-weight: 500;
+    color: var(--grey);
+    line-height: 2rem;
+}
+
+.sobre-h2{
+    font-size: 3.2rem;
+    color: var(--brilliantred);
+    margin-bottom: 1.2rem;
+    line-height: 3rem;
+}
+
+.sobre-text{
+    color: var(--grey);
+    margin-top: 0.2rem;
+    margin-bottom: 2rem;
+}
+
+.home-btn{
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    color: var(--bg);
+    margin-top: 5rem;
+    background-color: var(--brilliantred);
+    border: 2px solid var(--brilliantred);
+    padding: 12px 60px;
+    border-radius: 8px;
+    
+}
+
+.home-btn:hover{
+    color: #ffffff;
+    border: 2px solid  rgb(203, 54, 54);
+    background-color: rgb(203, 54, 54);
+}
+
+figure img{
+    height: 400px;
+    margin-right: 200px;
+}
+
+
+/* Contato */
+
+.div-contato{
+    padding: 0px 5%;
+}
+
+#contato{
+    color: var(--brilliantred);
+    margin-bottom: 16px;
+}
+
+.info-contatos{
+    width: 100%;
+    height: 30vh;
+    display: flex;
+    align-items: center;
+    align-items: flex-start;
+    justify-content: space-between;
+    
+}
+
+.info-contatos h3{
+    font-weight: 600;
+}
+
+.fale-conosco{
+    display: flex;
+    flex-direction: column;
+    color: var(--grey);
+}
+
+.fale-conosco form{
+    display: flex;
+    flex-direction: column;
+}
+
+
+.fale-conosco form input{
+    display: flex;
+    font-family: Arial, Helvetica, sans-serif;
+    flex-direction: column;
+    margin: 8px 0px 8px;
+    padding: 4px;
+    width: 200px;
+}
+
+input:focus, textarea:focus{
+    outline-color: var(--brilliantred);
+}
+
+.fale-conosco form textarea{
+    font-family: Arial, Helvetica, sans-serif;
+    resize: none;
+    padding: 24px 6px;
+    margin: 8px 0px;
+    height: 120px;
+}
+
+.fale-conosco form button{
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    color: var(--bg);
+    background-color: var(--brilliantred);
+    border: 2px solid var(--brilliantred);
+    padding: 12px 60px;
+    border-radius: 8px;
+}
+
+.fale-conosco form button:hover{
+    color: #ffffff;
+    border: 2px solid  rgb(203, 54, 54);
+    background-color: rgb(203, 54, 54);
+    cursor: pointer;
+}
+
+
+
+/*arrumar a textarea do textbox */
+#message-box{
+    width: 200px;
+}
+
+/*melhorar o botão */
+
+
+.nos-acompanhe ul li{
+    display: inline-block;
+    justify-content: space-between;
+    margin-top: 12px;
+}
+
+.nos-acompanhe h3{
+    color: var(--grey);
+}
+    
+#youtube-icon{
+    margin-right: 2px;
+}
+
+#facebook-icon img{
+    margin-right: 12px;
+}
+
+.venha-ate-nos h3{
+    color: var(--grey);
+}
+
+.social-icons img{
+    height: 24px;
+}
+
+.venha-ate-nos p{
+    font-weight: 500;
+    margin-top: 15px;
+    font-size: 14px;
+    margin-top: 4px;
+}
+
+footer{
+    display: flex;
+    margin-top: 10%;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--brilliantred);
+    padding: 20px;
+    align-items: center;
+}
+
+footer p{
+    font-size: 14px;
+    color: var();
+}
